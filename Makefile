@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -O0 -std=gnu99 -Wall
 EXEC = \
 	recursive iteration binary_search \
-	byte_shift harley_algorithm
+	byte_shift harley_algorithm calculate
 
 default: clz.o
 	$(CC) $(CFLAGS) clz.o clz_test.c -DRECURSIVE -o recursive
