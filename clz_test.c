@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
         assert(leading_zero == iteration(i) && "recursive error\n");
 
         output = fopen("txt_recursive.txt", "a");
-        fprintf(output, "%d leading_zero time %d %0.9lf\n", i, leading_zero, compute_time);
+        fprintf(output, "%d %0.9lf\n", i, compute_time);
 #endif
 
 #if defined(ITERATION)
@@ -52,7 +52,7 @@ int main(int argc, char const *argv[])
         compute_time = diff_in_second(start, end);
 
         output = fopen("txt_iteration.txt", "a");
-        fprintf(output, "%d leading_zero time %d %0.9lf\n", i, leading_zero, compute_time);
+        fprintf(output, "%d %0.9lf\n", i, compute_time);
 #endif
 
 #if defined(BINARY_SEARCH)
@@ -64,7 +64,7 @@ int main(int argc, char const *argv[])
         assert(leading_zero == iteration(i) && "binary error\n");
 
         output = fopen("txt_binary_search.txt", "a");
-        fprintf(output, "%d leading_zero time %d %0.9lf\n", i, leading_zero, compute_time);
+        fprintf(output, "%d %0.9lf\n", i, compute_time);
 #endif
 
 #if defined(BYTE_SHIFT)
@@ -76,7 +76,7 @@ int main(int argc, char const *argv[])
         assert(leading_zero == iteration(i) && "byte error\n");
 
         output = fopen("txt_byte_shift.txt", "a");
-        fprintf(output, "%d leading_zero time %d %0.9lf\n", i, leading_zero, compute_time);
+        fprintf(output, "%d %0.9lf\n", i, compute_time);
 #endif
 
 #if defined(HARLEY_ALGORITHM)
@@ -88,7 +88,7 @@ int main(int argc, char const *argv[])
         assert(leading_zero == iteration(i) && "harley error\n");
 
         output = fopen("txt_harley_algorighm.txt", "a");
-        fprintf(output, "%d leading_zero time %d %0.9lf\n", i, leading_zero, compute_time);
+        fprintf(output, "%d %0.9lf\n", i, compute_time);
 #endif
 
 

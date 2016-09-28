@@ -23,8 +23,14 @@ check: default
 	time ./byte_shift
 	time ./harley_algorithm
 
-plot : check
+output.txt: calculate
+	./calculate
+
+calculate: calculate.c
+	$(CC) $(CFLAGS) $^ -o $@
+
+plot : check output.txt
 	gnuplot ./scripts/runtime.gp
 
 clean:
-	rm -f $(EXEC) *.o *.s txt_*.txt runtime.png
+	rm -f $(EXEC) *.o *.s txt_*.txt runtime.png time.png

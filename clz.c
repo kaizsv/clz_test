@@ -107,6 +107,7 @@ int harley_algorithm(uint32_t N)
     N = (N << 8) - N;
     N = (N << 8) - N;
     N = (N << 8) - N;
+	//N *= 0x06EB14F9;
 
     return table[N >> 26];
 
