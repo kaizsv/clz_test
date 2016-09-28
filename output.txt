@@ -1,5 +1,0 @@
-recursive 0.000000073
-iteration 0.000000050
-binaryh 0.000000038
-byte 0.000000032
-harley 0.000000067

@@ -33,4 +33,4 @@ plot : check output.txt
 	gnuplot ./scripts/runtime.gp
 
 clean:
-	rm -f $(EXEC) *.o *.s txt_*.txt runtime.png time.png
+	rm -f $(EXEC) *.o *.s txt_*.txt runtime.png time.png output.txt
